@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Lightweight CLI for handling git branches",
   "main": "index.js",
+  "bin": {
+    "brancherCli": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,5 +27,15 @@
     "inquirer": "^7.3.3",
     "lodash": "^4.17.20",
     "simple-git": "^2.21.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "prettier": "^2.1.2"
   }
 }

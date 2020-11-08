@@ -38,3 +38,4 @@ coming soon
 - [ ] Add create repo prompt
 - [ ] Create NPM package and version tags
 - [ ] Make repo public
+- [ ] Redo screenshots

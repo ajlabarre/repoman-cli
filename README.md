@@ -11,7 +11,7 @@ npm i -g
 ## Usage
 After installing the dependencies and making the script globally available, run the following command:
 ```
-$ repoman-cli
+$ repoman
 ```
 
 ### Features

@@ -6,7 +6,7 @@ const figlet = require('figlet');
 
 const files = require('./lib/files');
 const github = require('./lib/github');
-const brancherPrompt = require('./lib/prompts');
+const repoManPrompts = require('./lib/prompts');
 const checkoutBranches = require('./lib/checkoutBranches');
 const deleteBranches = require('./lib/deleteBranches');
 const createNewRepo = require('./lib/createNewRepo');
@@ -15,18 +15,18 @@ const createNewRepo = require('./lib/createNewRepo');
 clear();
 
 console.log(
-  chalk.cyanBright(figlet.textSync('BrancherCLI', { horizontalLayout: 'full' }))
+  chalk.cyanBright(figlet.textSync('RepoMan CLI', { horizontalLayout: 'full' }))
 );
 
 console.log(
-  'Brancher CLI is a lightweight command line tool that allows you to easily manage git branches'
+  'RepoMan CLI is a lightweight command line tool that allows you to easily manage git branches'
 );
-console.log('See https://github.com/ajlabarre/brancherCli for more details \n');
+console.log('See https://github.com/ajlabarre/repoman-cli for more details \n');
 
 const checkoutBranchPrompt = async () => {
   try {
     const branchList = await checkoutBranches.getBranches();
-    const branch = await brancherPrompt.listBranches(branchList);
+    const branch = await repoManPrompts.listBranches(branchList);
     await checkoutBranches.checkoutBranch(branch);
   } catch (error) {
     console.error(error);
@@ -36,7 +36,7 @@ const checkoutBranchPrompt = async () => {
 const deleteBranchesPrompt = async () => {
   try {
     const branchList = await deleteBranches.getBranches();
-    const branchesToDelete = await brancherPrompt.deleteBranches(branchList);
+    const branchesToDelete = await repoManPrompts.deleteBranches(branchList);
     await deleteBranches.deleteBranches(branchesToDelete);
   } catch (error) {
     console.error(error);
@@ -102,7 +102,7 @@ const createNewRepoPrompt = async () => {
 
 const start = async () => {
   try {
-    const action = await brancherPrompt.listChoices();
+    const action = await repoManPrompts.listChoices();
 
     switch (action) {
       case 'checkoutBranch':

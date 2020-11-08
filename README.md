@@ -1,9 +1,9 @@
-# BrancherCLI
+# Repo Manager CLI
 Simple command line tool for repo creation and branch management
-![brancherCli](https://github.com/ajlabarre/brancherCli/blob/master/screenshots/brancherCli.png?raw=true)
+![repoman-cli](https://github.com/ajlabarre/repoman-cli/blob/master/screenshots/repoman-cli.png?raw=true)
 
 ## Setup
-Install dependencies and make the brancherCli command globally available
+Install dependencies and make the repoman-cli command globally available
 ```
 npm i -g
 ```
@@ -11,18 +11,18 @@ npm i -g
 ## Usage
 After installing the dependencies and making the script globally available, run the following command:
 ```
-$ brancherCli
+$ repoman-cli
 ```
 
 ### Features
 ##### Checking out a branch
-![checkoutBranch](https://github.com/ajlabarre/brancherCli/blob/readme/screenshots/checkoutBranch.png?raw=true)
+![checkoutBranch](https://github.com/ajlabarre/repoman-cli/blob/readme/screenshots/checkoutBranch.png?raw=true)
 
 - Use arrow keys to move between branches
 - Press enter to checkout selected branch
 
 ##### Deleting one or more branches
-![deletingBranches](https://github.com/ajlabarre/brancherCli/blob/readme/screenshots/deleteBranches.png?raw=true)
+![deletingBranches](https://github.com/ajlabarre/repoman-cli/blob/readme/screenshots/deleteBranches.png?raw=true)
 
 - Use arrow keys to move between branches
 - Press the space bar to select the branch(es) you want to delete

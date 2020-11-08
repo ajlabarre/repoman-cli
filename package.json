@@ -1,25 +1,25 @@
 {
-  "name": "brancherCli",
+  "name": "repoman-cli",
   "version": "0.0.0",
-  "description": "Lightweight CLI for handling git branches",
+  "description": "Lightweight Github repository management CLI",
   "main": "index.js",
   "bin": {
-    "brancherCli": "./index.js"
+    "repoman": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ajlabarre/brancherCli.git"
+    "url": "git+https://github.com/ajlabarre/repoman-cli.git"
   },
   "keywords": [],
   "author": "AJ LaBarre",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ajlabarre/brancherCli/issues"
+    "url": "https://github.com/ajlabarre/repoman-cli/issues"
   },
-  "homepage": "https://github.com/ajlabarre/brancherCli#readme",
+  "homepage": "https://github.com/ajlabarre/repoman-cli#readme",
   "dependencies": {
     "@octokit/auth-basic": "^1.4.7",
     "@octokit/rest": "^18.0.9",

@@ -32,10 +32,3 @@ $ repoman
 
 ##### Creating a repo
 coming soon
-
-### Todo
-- [ ] Update readme
-- [ ] Add create repo prompt
-- [ ] Create NPM package and version tags
-- [ ] Make repo public
-- [ ] Redo screenshots
